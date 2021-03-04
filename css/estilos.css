@@ -11,17 +11,17 @@ body
 {
     display: flex;
     background-color: rgb(223, 223, 223);
-    height: 300px;
-    width: 300px;
+    height: 500px;
+    width: 270px;
     margin: auto;
     border-radius: .9em;
     border: transparent;
+    flex-direction: column;
 }
 #pantalla
 {
     background-color: darkseagreen;
     height: 60px;
-    width: 100%;
     border-radius: .9em;
     border: transparent;
     margin: 10px;
@@ -31,4 +31,21 @@ body
 h1
 {
     text-align: center;
+}
+#controles
+{
+    margin: 10px 15px;
+}
+.numbers
+{
+    width: 55px;
+    height: 55px;
+    font-size: 25px;
+    font-weight: bold;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    margin: 10px 0;
+}
+#zero
+{
+    width: 73%;
 }
