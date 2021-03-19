@@ -3,49 +3,104 @@
     margin: 0;
     padding: 0;
 }
+html
+{
+    height: 100%;
+}
 body
 {
-    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-}
-#base-calculadora
-{
     display: flex;
-    background-color: rgb(223, 223, 223);
-    height: 500px;
-    width: 270px;
-    margin: auto;
-    border-radius: .9em;
-    border: transparent;
     flex-direction: column;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    background-image: radial-gradient(circle at 69% 86%, rgba(165, 165, 165,0.06) 0%, rgba(165, 165, 165,0.06) 25%,rgba(193, 193, 193,0.06) 25%, rgba(193, 193, 193,0.06) 50%,rgba(221, 221, 221,0.06) 50%, rgba(221, 221, 221,0.06) 75%,rgba(249, 249, 249,0.06) 75%, rgba(249, 249, 249,0.06) 100%),radial-gradient(circle at 49% 76%, rgba(129, 129, 129,0.06) 0%, rgba(129, 129, 129,0.06) 25%,rgba(164, 164, 164,0.06) 25%, rgba(164, 164, 164,0.06) 50%,rgba(200, 200, 200,0.06) 50%, rgba(200, 200, 200,0.06) 75%,rgba(235, 235, 235,0.06) 75%, rgba(235, 235, 235,0.06) 100%),radial-gradient(circle at 22% 64%, rgba(173, 173, 173,0.06) 0%, rgba(173, 173, 173,0.06) 25%,rgba(119, 119, 119,0.06) 25%, rgba(119, 119, 119,0.06) 50%,rgba(64, 64, 64,0.06) 50%, rgba(64, 64, 64,0.06) 75%,rgba(10, 10, 10,0.06) 75%, rgba(10, 10, 10,0.06) 100%),linear-gradient(307deg, rgb(255,255,255),rgb(255,255,255));
+    height: 100%;
+    align-items: center;
 }
-#pantalla
+.base-calculadora
 {
-    background-color: darkseagreen;
-    height: 60px;
-    border-radius: .9em;
+    display: grid;
+    grid-template-rows: .5fr 2fr;
+    grid-template-columns: 1fr;
+    background-color: darkcyan;
+    height: 370px;
+    width: 270px;
     border: transparent;
-    margin: 10px;
+}
+.pantalla
+{
+    background-color: rgb(176, 207, 207);
+    border: transparent;
+    margin: 5px;
     text-align: end;
     font-size: 20px;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    flex-direction: column;
+}
+.pantalla label
+{
+    margin-right: 10px;
+}
+.controles
+{
+    display: grid;
+    grid-template-columns: .5fr .5fr .5fr .5fr;
+    grid-template-rows: .26fr .26fr .26fr .26fr .26fr;
+    grid-gap: 5px;
+    margin: 10px 5px;
+}
+.operations
+{
+    grid-column: 4;
+    background-color: rgb(210, 236, 236);
+}
+.row01
+{
+    background-color: rgb(210, 236, 236);
+    grid-row: 1;
+    grid-column: 1/4;
+}
+.row02
+{
+    grid-row: 2;
+    background-color: rgb(169, 228, 230);
+}
+.row03
+{
+    grid-row: 3;
+    background-color: rgb(169, 228, 230);
+}
+.row04
+{
+    grid-row: 4;
+    background-color: rgb(169, 228, 230);
+}
+.row05
+{
+    grid-row: 5;
+    grid-column: 1/4;
+    background-color: rgb(169, 228, 230);
+}
+.controles button
+{
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-size: 1.4em;
+    border: transparent;
+    font-weight: bold;
+    cursor: pointer;
+}
+.controles button:focus
+{
+    outline: none;
+}
+.controles button:hover
+{
+    transition: all 5ms;
+    background-color: rgb(190, 250, 252);
 }
 h1
 {
+    margin: 20px 0;
     text-align: center;
-}
-#controles
-{
-    margin: 10px 15px;
-}
-.numbers
-{
-    width: 55px;
-    height: 55px;
-    font-size: 25px;
-    font-weight: bold;
-    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-    margin: 10px 0;
-}
-#zero
-{
-    width: 73%;
 }
